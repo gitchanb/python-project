@@ -1,0 +1,19 @@
+
+expenses = []
+
+while True:
+    a = input('write the name of expense (or done to stop): ')
+    
+    if a == "done":
+        break
+    
+    b = float(input('enter the amount: '))
+    c = {"name": a, "amount": b}
+    expenses.append(c)
+
+print(expenses)
+
+total=0
+for e in expenses:
+    total=total+e["amount"]
+print(total)
