@@ -16,4 +16,5 @@ print(expenses)
 total=0
 for e in expenses:
     total=total+e["amount"]
-print(total)
+print(f'the total is{total}')
+print(max(expenses, key=lambda e: e["amount"]))
