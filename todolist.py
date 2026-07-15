@@ -1,5 +1,4 @@
 a=[]
-f=[]
 while True:
     print('1-Add tasks')
     print('2-view tasks')
@@ -17,9 +16,8 @@ while True:
     elif b=='2':
         for i,t in enumerate(a):
             status='X' if t['done'] else ''
-            print(f'{i+1}.[{status}] {t['task']}')
+            print(f'{i+1}.[ {status} ] {t['task']}')
     
     elif b=='3':
         d=int(input('which task number is completed: '))
         a[d-1]['done']=True
-        
