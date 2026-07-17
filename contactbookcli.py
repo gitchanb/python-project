@@ -27,10 +27,13 @@ while True:
     
     elif a==3:
         d=input('enter the name of ther person')
+        found=False
         for person in contact:
             if d == person['name']:
                 print(person)
-    
+                found=True
+        if not found:
+            print('no contact found')
     elif a==4:
         e=input('enter the contact name you want to delete')
         for person in contact:
