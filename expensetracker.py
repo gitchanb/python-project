@@ -11,10 +11,12 @@ while True:
     c = {"name": a, "amount": b}
     expenses.append(c)
 
-print(expenses)
+for i,e in enumerate(expenses):
+    print(f'{i+1}.  {e['name']} - {e['amount']}')
 
 total=0
 for e in expenses:
     total=total+e["amount"]
 print(f'the total is{total}')
-print(max(expenses, key=lambda e: e["amount"]))
+biggest=max(expenses, key=lambda e: e["amount"])
+print(f'The biggest expense is {biggest['name']} and ammount {biggest['amount']}')
