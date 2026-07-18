@@ -17,6 +17,6 @@ for i,e in enumerate(expenses):
 total=0
 for e in expenses:
     total=total+e["amount"]
-print(f'the total is{total}')
+print(f'the total is {total}')
 biggest=max(expenses, key=lambda e: e["amount"])
-print(f'The biggest expense is {biggest['name']} and ammount {biggest['amount']}')
+print(f'The biggest expense is {biggest['name']} and amount {biggest['amount']}')
